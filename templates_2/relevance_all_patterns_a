@@ -1,0 +1,142 @@
+
+
+PosAdj = A
+
+PosAdv = Av
+
+DictB = Pt<не>
+
+DictC = V<иметь> | V<отличаться>
+
+DictD = Pr<в> | Pr<на> | Pr<от> | Pr<по>
+
+DictE = N<ряд>
+
+DictH = N<интерес> | N<значение> | N<корень> | N<качество> | N<новизна> | N<оригинальность> | N<особенность> | N<свойства> | N<степень> | N<точность> | N<уровень>
+
+DictI = V<найти> | V<находить>
+
+DictJ = Pt<все> | Pn<себе>
+
+DictK = A<больше> | Av<весьма> | Pt<еще> | A<самый>
+
+DictL = A<один>
+
+DictN = N<применение> | N<путь>
+
+DictO = V<облегчить>
+
+DictP = N<выполнение> | N<задача> | N<изучение> | N<исследование> | N<получение> | N<понимание> | N<работа>
+
+DictR = N<значение> | N<интерес> | N<ценность>
+
+DictS = V<представлять> | V<представляться>
+
+DictT = Pr<в> | Pr<до> | Pr<на> | Av<пока> | Av<уже>
+
+DictV = N<время> | N<момент> | N<пора>
+
+DictW = V<существовать>
+
+DictY = N<количество> | N<решение>
+
+DictZ = Pr<в> | Pr<до> | Pt<еще> | Pr<на> | Av<пока>
+
+DictAB = N<значение> | N<интерес>
+
+DictAC = V<вызывать> | V<иметь> | V<приобретать>
+
+DictAD = Pr<в> | Pr<на>
+
+DictAF = N<время> | N<момент>
+
+DictAG = N<время>
+
+DictAH = Pn<мы>
+
+DictAI = V<вестись> | V<отсутствовать> | V<появляться> | V<развиваться> | V<разрабатывать> | V<являться>
+
+DictAK = N<вопрос> | N<метод> | N<система>
+
+DictAL = N<мочь>
+
+DictAM = V<быть> | V<представляться> | V<оставаться> | V<являться>
+
+DictAN = Pr<из>
+
+DictAO = A<актуальный> | A<интересный>
+
+DictAP = N<вопрос> | N<задача> | N<особенность> | N<проблема> | N<состояние> | N<случай>
+
+DictAQ = V<являться>
+
+DictAR = V<искать> | V<находить> | V<обнаруживать> | V<открывать> | V<получать> | V<появляться> | V<предлагать> | V<разрабатывать> | V<рассматривать> | V<создавать> | V<создаваться> | V<формироваться>
+
+DictAS = N<появление> | N<развитие> | N<разработка> | N<ряд> | N<создание> | N<формирование>
+
+DictAU = A<новый>
+
+DictAV = N<вид> | N<возможность> | N<вопрос> | Pa<данные> | N<идея> | N<метод> | N<направление> | N<подход> | N<правило> | N<проект> | N<путь> | N<результат> | N<серия> | N<система> | N<смысл> | N<событие> | N<способ> | N<средство> | N<технология> | N<эксперимент> | N<явление>
+
+DictAW = V<быть>
+
+DictAX = V<оказываться> | V<являться>
+
+DictAZ = A<полезный>
+
+DictBA = V<ипользовать> | V<отражать> | V<отсутствовать> | V<принимать> | V<распространять>
+
+DictBB = N<использование> | N<метод> | N<направление> | N<основа> | N<применение> | N<проблема> | N<развитие> | N<создание>
+
+DictBC = Pr<в> | Pr<на>
+
+DictBD = A<современный>
+
+DictBE = N<метод> | N<наука> | N<подход> | N<представление> | N<работа> | N<система> | N<состояние> | N<технология> | N<уровень> | N<этап>
+
+DictBF = A<уникальный>
+
+DictBG = N<автор>
+
+DictBH = A<первый>
+
+DictBI = N<работа>
+
+DictBJ = Av<впервые> | Av<давно>
+
+DictBK = V<вводить> | V<предлагать>
+
+
+PatternA = [PosAdv] [DictB] DictC [DictD] [DictE] [PosAdv] [PosAdj] [DictH] 
+
+PatternB = [DictB] DictI [DictJ] [DictK] [DictL] [PosAdj] [DictN] 
+
+PatternC = DictO [DictP] 
+
+PatternD = [DictB] [PosAdj] [DictR] DictS
+
+PatternP = [DictB] DictS [PosAdj] [DictR]
+
+PatternE = [DictT] [PosAdj] [DictV] [DictB] DictW [PosAdj] [DictY] 
+
+PatternF = [DictB] DictW [DictZ] [PosAdj] [DictV] 
+
+PatternG = [PosAdj] DictAB [DictAC] 
+
+PatternH = [DictAD] [PosAdj] DictAF [DictAG] [DictAH] [DictB] [DictAI] [PosAdj] [DictAK] 
+
+PatternI = [DictAL] [DictAM] [DictB] [DictL] [DictAN] [PosAdv] DictAO [DictAP] [DictAQ] 
+
+PatternJ = [DictAR] [DictAS] [PosAdv] [PosAdv] DictAU [DictAV] 
+
+PatternK = [DictAL] [DictAW] [DictAX] [PosAdv] DictAZ
+
+PatternL = [DictBA] [DictBB] [DictBC] [PosAdv] DictBD [DictBE] 
+
+PatternM = DictBF
+
+PatternN = [DictBG] DictBH
+
+PatternO = [DictAW] [DictBI] DictBJ [DictAW] [DictBK] [PosAdj] 
+
+Relevance = PatternA | PatternB | PatternC | PatternD | PatternE | PatternF | PatternG | PatternH | PatternI | PatternJ | PatternK | PatternL | PatternM | PatternN | PatternO
